@@ -1,4 +1,4 @@
-package gsl
+package sf
 
 import (
 	"fmt"

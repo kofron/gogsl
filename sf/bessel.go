@@ -3,7 +3,7 @@ bessel.go
 golang wrappers for bessel functions in gsl.
 */
 
-package gsl
+package sf
 
 // #cgo LDFLAGS: -lgsl
 // #include "gsl/gsl_sf_bessel.h"
