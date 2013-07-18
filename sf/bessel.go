@@ -11,7 +11,7 @@ import "C"
 
 import (
 	"unsafe"
-	"github.com/kofron/gogsl/errors"
+	"github.com/kofron/gogsl"
 )
 
 func BesselJ0(x float64) (result float64) {
