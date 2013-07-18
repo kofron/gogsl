@@ -1,4 +1,4 @@
-package gsl
+package fit
 
 // #cgo LDFLAGS: -lgsl
 // #include "gsl/gsl_fit.h"

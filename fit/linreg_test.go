@@ -1,4 +1,4 @@
-package gsl
+package fit
 
 import (
 	"fmt"
