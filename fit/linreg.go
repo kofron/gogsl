@@ -7,7 +7,7 @@ import "C"
 import (
 	"fmt"
 	"unsafe"
-	"github.com/kofron/gogsl/errors"
+	"github.com/kofron/gogsl"
 )
 
 /* A simple storage container for Linear Fit results.  Note that not all
