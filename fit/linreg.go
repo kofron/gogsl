@@ -25,7 +25,7 @@ type LinearFit struct {
  * From the GSL manual:
  * This function uses the best-fit linear regression coefficients Y0, Slope 
  * and their covariance Cov00, Cov01, Cov11 to compute the fitted function 
- * y and its standard deviation y_err for themodel 
+ * y and its standard deviation y_err for the model 
  * Y = Y0 + Slope* X at the point x.
  */
 func (f *LinearFit) ValueAt(x float64) (y, y_err float64, e error) {
