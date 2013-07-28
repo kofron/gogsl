@@ -5,7 +5,6 @@ package fit
 import "C"
 
 import (
-	"fmt"
 	"unsafe"
 	"github.com/kofron/gogsl"
 )
@@ -76,7 +75,6 @@ func FitLinear(x,y *[]float64, stridex, stridey uint) (f *LinearFit, e error){
 		(*C.double)(&f.SumSq))
 	if er == (C.int)(0) {
 		e = nil
-		fmt.Printf("Sum of Squares: %v\n",f.SumSq)
 	} else {
 		e = gsl.NewGSLError(int(er))
 	}
@@ -116,7 +114,6 @@ func FitWLinear(x,y,w *[]float64, sx, sy, sw uint) (f *LinearFit, e error) {
 		(*C.double)(&f.ChiSq))
 	if er == (C.int)(0) {
 		e = nil
-		fmt.Printf("Chi Squared: %v\n",f.ChiSq)
 	} else {
 		e = gsl.NewGSLError(int(er))
 	}
